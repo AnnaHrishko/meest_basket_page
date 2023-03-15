@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+</head>
+<body>
+	
+<div class="container">
+	<div class="title_page_wrapper">
+		<h1>Спільний кошик</h1>
+		<div class="toggle_switch">
+			<a href="" id="delivery_europe" class="page active">Європа</a>
+			<a href="" id="delivery_usa" class="page">США</a>
+		</div>
+		<div class="switch_country_mobile">
+			<span>Європа</span>
+			<label class="switch mobile">
+			  	<input type="checkbox">
+			  	<span class="slider round"></span>
+			</label>
+			<span>США</span>
+		</div>
+	</div>
+</div>
+<form action="" class="form_basket_meest">
+	<div class="bcg_grey basket_section">
+		<div class="container">
+			<div class="" class="contact_info_wrapper">
+				<h2 class="name_sec_basket">Контактні дані</h2>
+				<div class="contact_info_form">
+					<div class="grid_w33">
+						<label for="" class="input_label">
+							<span class="name_input">Прізвище</span>
+							<input type="text" placeholder="Напишіть прізвище" name="last_name">
+						</label>
+						<label for="" class="input_label">
+							<span class="name_input">Ім’я</span>
+							<input type="text" placeholder="Напишіть ім’я" name="first_name">
+						</label>
+						<label for="" class="input_label">
+							<span class="name_input">По-батькові</span>
+							<input type="text" placeholder="Напишіть по-батькові" name="po_batkovi">
+						</label>
+					</div>
+					<div class="grid_w50">
+						<label for="" class="input_label">
+							<span class="name_input">Телефон</span>
+							<input type="tel" name="phone" inputmode="numeric" class="phoneInput" placeholder="+38 (_ _ _) _ _ _ - _ _ - _ _" autocomplete="off" aria-invalid="false"  >
+						</label>
+						<label for="" class="input_label">
+							<span class="name_input">E-mail</span>
+							<input type="text" placeholder="meest@gmail.com" name="email">
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bcg_grey basket_section">
+		<div class="container">
+			<div class="goods_buy_wrapper">
+				<h2 class="name_sec_basket">Товари для викупу</h2>
+				<div class="goods_buy_form_all" id="goods_buy_form_all">
+					<div class="goods_buy_form" id="goods_buy_form">
+						<a href="#open_popup_close" class="close_goods"><img  src="img/close_goods.svg" alt=""></a>
+						<div class="grid_w33">
+							<label for="" class="input_label">
+								<span class="name_input">Посилання на товар</span>
+								<input type="text" placeholder="Вставте посилання" name="link">
+							</label>
+							<label for="" class="input_label">
+								<span class="name_input">Опис товару</span>
+								<input type="text" placeholder="Введіть опис товару" name="description_goods">
+							</label>
+							<label for="" class="input_label">
+								<span class="name_input">Розмір</span>
+								<input type="text" placeholder="Вкажіть розмір" name="size">
+							</label>
+						</div>
+						<div class="grid_w25">
+							<label for="" class="input_label">
+								<span class="name_input">Колір</span>
+								<input type="text" placeholder="Вкажіть колір" name="color">
+							</label>
+							<label for="" class="input_label">
+								<span class="name_input">Кількість</span>
+								<input type="text" placeholder="Вкажіть кількість" name="value">
+							</label>
+							<label for="" class="input_label">
+								<span class="name_input">Загальна вартість позицій</span>
+								<input type="text" placeholder="0.00" name="price">
+							</label>
+							<label for="" class="input_label">
+								<span class="name_input">Валюта</span>
+								<select name="" id="">
+									<option value="">Виберіть валюту</option>
+									<option value="">uan</option>
+								</select>
+							</label>
+						</div>
+						<button class="add_link"  onclick="duplicateForm();">
+							<img src="img/add_link.png" alt="">
+							<span>додати ще посилання</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bcg_grey basket_section">
+		<div class="container">
+			<div class="delivery_options_wrapper">
+				<h2 class="name_sec_basket">Варіанти доставки</h2>
+				<div class="delivery_options_form">
+					<div class="grid_w50">
+						<label for="" class="input_label">
+							<span class="name_input">Тип доставки по Україні</span>
+							<select name="" id="">
+								<option value="">Нова пошта</option>
+								<option value="">Укр пошта</option>
+							</select>
+						</label>
+					</div>
+					<div class="grid_w33">
+						<label for="" class="input_label">
+							<span class="name_input">Місто</span>
+							<input type="text" placeholder="Напишіть місто" name="town">
+						</label>
+						<label for="" class="input_label">
+							<span class="name_input">Відділення</span>
+							<input type="text" placeholder="Номер відділення" name="department_post">
+						</label>
+						<label for="" class="input_label">
+							<span class="name_input">Тип доставки</span>
+							<select name="" id="">
+								<option value="">Кур’єрська доставка</option>
+								<option value="">забрати у відділенні</option>
+							</select>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="agree_rules_wrapper">
+			<div class="custom_chekbox">
+				<input type="checkbox">
+			 	<span class="checkmark"></span>
+			</div>
+			<p>Я прочитав і погоджуюся з <span>Умовами користування</span></p>
+		</div>
+		<div class="flex_btn">
+			<button class="grey_btn">Відправити</button>
+			<button class="sub_btn">Скасувати</button>
+		</div>
+	</div>
+</form>
+<div class="container">
+	<div class="delivery_work_info_wrap">
+		<div class="del_work_col">
+			<span class="name_col">Вартість викупу з Європи</span>
+			<p class="procent">9%</p>
+			<p class="text_p">від вартості товару</p>
+		</div>
+		<div class="del_work_col">
+			<span class="name_col">Робочі години</span>
+			<p class="text_p">Пн - Пт 09:00 - 18:00</p>
+			<p class="text_p">Сб - Нд 10:00 - 15:00</p>
+		</div>
+		<div class="del_work_col">
+			<span class="name_col">Контакти</span>
+			<a href=""><p class="text_p">+380 067 178 21 08</p></a>
+			<a href=""><p class="text_p">shop.service@mymeest.com</p></a>
+		</div>
+	</div>
+</div>
+
+
+<div id="open_popup_close" class="delete_goods mfp-hide white-popup-block">
+	<a href="" class="close_popup"><img  src="img/close_goods.svg" alt=""></a>
+	<img src="img/icon_delete.svg" alt="">
+	<h2>Ви впевнені, що хочете <br> видалити товар?</h2>
+	<a href="" class="blue_button delete_goods_buy_form">Так, видалити</a>
+	<a href="" class="sub_btn">Відмінити</a>
+</div>
+<script src="js/jq.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.maskedinput.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
