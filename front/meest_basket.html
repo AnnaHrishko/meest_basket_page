@@ -66,7 +66,7 @@
 			<div class="goods_buy_wrapper">
 				<h2 class="name_sec_basket">Товари для викупу</h2>
 				<div class="goods_buy_form_all" id="goods_buy_form_all">
-					<div class="goods_buy_form" id="goods_buy_form">
+					<div class="goods_buy_form">
 						<a href="#open_popup_close" class="close_goods"><img  src="img/close_goods.svg" alt=""></a>
 						<div class="grid_w33">
 							<label for="" class="input_label">
@@ -103,12 +103,12 @@
 								</select>
 							</label>
 						</div>
-						<button class="add_link"  onclick="duplicateForm();">
-							<img src="img/add_link.png" alt="">
-							<span>додати ще посилання</span>
-						</button>
 					</div>
 				</div>
+				<a href="#" class="add_link">
+					<img src="img/add_link.png" alt="">
+					<span>додати ще посилання</span>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -149,11 +149,11 @@
 	</div>
 	<div class="container">
 		<div class="agree_rules_wrapper">
-			<div class="custom_chekbox">
+			<label class="custom_chekbox">
 				<input type="checkbox">
 			 	<span class="checkmark"></span>
-			</div>
-			<p>Я прочитав і погоджуюся з <span>Умовами користування</span></p>
+			 	<span class="text">Я прочитав і погоджуюся з <a href="#">Умовами користування</a></span>
+			</label>
 		</div>
 		<div class="flex_btn">
 			<button class="grey_btn">Відправити</button>
