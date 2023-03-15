@@ -140,4 +140,27 @@
   .slider.round:before {
     border-radius: 50%;
   }
+  .delete_goods {
+    width: 100%;
+    padding: 58px 35px 48px;
+  }
+  .delete_goods .blue_button {
+    margin-bottom: 13px;
+    height: 48px;
+  }
+  .delete_goods .sub_btn {
+    height: 48px;
+  }
+  .delete_goods h2 {
+    margin-bottom: 48px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .delete_goods h2 {
+    margin-bottom: 48px;
+    width: calc(100% + 30px);
+  }
+  .delete_goods h2 br {
+    display: none;
+  }
 }
