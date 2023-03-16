@@ -97,17 +97,17 @@ body {
   margin-bottom: 10px;
   position: relative;
 }
-.input_label .name_input:hover .prompt {
-  display: block;
-}
-.input_label .name_input:hover svg path {
-  fill: #0860C7;
-}
 .input_label .name_input svg {
   cursor: pointer;
   position: absolute;
   top: 7px;
   right: -20px;
+}
+.input_label .name_input .svg:hover .prompt {
+  display: block;
+}
+.input_label .name_input .svg:hover svg path {
+  fill: #0860C7;
 }
 .input_label .name_input .prompt {
   display: none;
