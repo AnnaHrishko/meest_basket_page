@@ -109,3 +109,36 @@ $('.toggle_switch .page').click(function(){
    $(this).addClass('active')
    return false
 })
+
+$(".custom_chekbox input[type='checkbox']").change(function(){
+    if($(this).is(":checked")){
+        $(this).parents('.parent_wrap').find('.flex_btn .grey_btn').addClass('active_color_blue'); 
+    }else{
+        $(this).parents('.parent_wrap').find('.flex_btn .grey_btn').removeClass("active_color_blue");  
+    }
+});
+
+
+
+$('#delivery_europe').click(function(){
+   $(".input_city").val("Europe");
+})
+$('#delivery_usa').click(function(){
+   $(".input_city").val("Usa");
+})
+
+$(document).ready(function() {
+    $('.select_town').select2();
+});
+
+$(document).ready(function() {
+    $('.select_type_delivery').select2();
+});
+
+$(document).ready(function() {
+    $('.type_delivery').select2();
+});
+
+$(document).ready(function() {
+    $('.type_money').select2();
+});
